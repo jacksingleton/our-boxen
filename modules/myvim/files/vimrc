@@ -1,0 +1,57 @@
+execute pathogen#infect()
+
+syntax on
+set background=dark
+colorscheme zenburn
+set cursorline
+set hlsearch
+
+set tabstop=8
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
+set diffopt+=vertical
+
+set number
+
+set list
+
+filetype indent plugin on
+
+map <F1> :NERDTreeFind<CR>
+
+" ESC clears highlight
+noremap <silent> <ESC> :noh<CR><ESC>
+
+set nowrap
+
+set visualbell
+
+" No Scrollbars
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
+set guifont=Monaco:h16
+
+set viminfo='10,\"100,:20,%,n~/.viminfo
+
+" Autosave
+au FocusLost * silent! wa
+
+" Remember cursor position
+function! ResCur()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
+
+let NERDTreeIgnore=['\.pyc$']
+
+set wildignore+=*.pyc

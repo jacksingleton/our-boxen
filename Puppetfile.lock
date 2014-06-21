@@ -9,6 +9,11 @@ GITHUBTARBALL
     dnsmasq (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.2.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
     foreman (1.2.0)
@@ -39,19 +44,19 @@ GITHUBTARBALL
     hub (1.3.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nginx
+  remote: boxen/puppet-macvim
   specs:
-    nginx (1.4.3)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (3.7.0)
+    macvim (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -62,6 +67,11 @@ GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-python
+  specs:
+    python (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -77,6 +87,16 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vim
+  specs:
+    vim (1.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -100,7 +120,9 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.6.1)
+  boxen (= 3.6.1)
   dnsmasq (= 1.0.1)
+  firefox (= 1.2.1)
   foreman (= 1.2.0)
   gcc (= 2.0.101)
   git (= 2.4.0)
@@ -108,15 +130,18 @@ DEPENDENCIES
   homebrew (= 1.9.3)
   hub (= 1.3.0)
   inifile (= 1.0.3)
+  macvim (= 1.0.0)
   module-data (= 0.0.3)
-  nginx (= 1.4.3)
-  nodejs (= 3.7.0)
   openssl (= 1.0.0)
+  osx (= 2.7.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  python (= 1.1.1)
   repository (= 2.3.0)
   ruby (= 8.0.4)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
+  vagrant (= 3.1.1)
+  vim (= 1.0.5)
   xquartz (= 1.1.1)
 
