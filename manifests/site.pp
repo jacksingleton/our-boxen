@@ -70,12 +70,11 @@ node default {
     version => '12.1.6'
   }
   include screenhero
-
-  # common, useful packages
   package { [
     'ack',
     'findutils',
-    'gnu-tar'
+    'gnu-tar',
+    'gpg',
   ]: }
 
   # default ruby versions
