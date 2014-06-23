@@ -61,6 +61,7 @@ github "osx",         "2.7.0"
 github "vim",         "1.0.5"
 github "intellij",    "1.5.1"
 github "java",        "1.5.0"
+github "screenhero",  "1.0.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

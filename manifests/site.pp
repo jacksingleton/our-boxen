@@ -69,6 +69,7 @@ node default {
     edition => 'ultimate',
     version => '12.1.6'
   }
+  include screenhero
 
   # common, useful packages
   package { [
