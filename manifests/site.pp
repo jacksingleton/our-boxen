@@ -64,22 +64,25 @@ node default {
   include macvim
   include firefox
   include vagrant
-
-  # fail if FDE is not enabled
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
+  include java
+  class { 'intellij':
+    edition => 'ultimate',
+    version => '12.1.6'
   }
+
+  # common, useful packages
+  package { [
+    'ack',
+    'findutils',
+    'gnu-tar'
+  ]: }
 
   # default ruby versions
   ruby::version { '2.1.2': }
 
-  # common, useful packages
-  package {
-    [
-      'ack',
-      'findutils',
-      'gnu-tar'
-    ]:
+  # fail if FDE is not enabled
+  if $::root_encrypted == 'no' {
+    fail('Please enable full disk encryption and try again')
   }
 
   file { "${boxen::config::srcdir}/our-boxen":

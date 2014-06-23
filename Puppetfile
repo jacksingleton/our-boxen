@@ -59,8 +59,8 @@ github "vagrant",     "3.1.1"
 github "firefox",     "1.2.1"
 github "osx",         "2.7.0"
 github "vim",         "1.0.5"
-github "boxen",         "3.6.1"
-github "python",         "1.1.1"
+github "intellij",    "1.5.1"
+github "java",        "1.5.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
