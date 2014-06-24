@@ -59,7 +59,6 @@ node default {
   include my_git
 
   include dnsmasq
-  include git
   include hub
   include macvim
   include firefox

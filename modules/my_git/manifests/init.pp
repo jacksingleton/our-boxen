@@ -1,5 +1,7 @@
 class my_git {
 
+  include git
+
   git::config::global { 'user.name':
     value  => 'Jack Singleton'
   }
