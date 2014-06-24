@@ -57,6 +57,7 @@ node default {
   include my_vim
   include my_osx_defaults
   include my_git
+  include my_jrnl
 
   include dnsmasq
   include hub
