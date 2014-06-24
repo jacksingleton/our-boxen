@@ -65,11 +65,19 @@ node default {
   include firefox
   include vagrant
   include java
+  include screenhero
+
   class { 'intellij':
     edition => 'ultimate',
     version => '12.1.6'
   }
-  include screenhero
+
+  package { 'GPGTools':
+    name => 'Install.pkg',
+    provider => 'pkgdmg',
+    source => 'https://releases.gpgtools.org/GPG%20Suite%20-%202013.10.22.dmg',
+  }
+
   package { [
     'ack',
     'findutils',
