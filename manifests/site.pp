@@ -78,6 +78,18 @@ node default {
     source => 'https://releases.gpgtools.org/GPG%20Suite%20-%202013.10.22.dmg',
   }
 
+  package { 'leiningen': }
+
+  package { 'Colloquy':
+    source => 'http://colloquy.info/downloads/colloquy-latest.zip',
+    provider => 'compressed_app'
+  }
+
+  package { 'Virtualbox':
+    source => 'http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-OSX.dmg',
+    provider => 'pkgdmg',
+  }
+
   package { [
     'ack',
     'findutils',
