@@ -90,6 +90,11 @@ node default {
     provider => 'pkgdmg',
   }
 
+  package { 'Dash':
+    source => 'http://london.kapeli.com/Dash.zip',
+    provider => 'compressed_app',
+  }
+
   package { [
     'ack',
     'findutils',
