@@ -72,11 +72,11 @@ node default {
     version => '12.1.6'
   }
 
-  package { 'GPGTools':
-    name => 'Install.pkg',
-    provider => 'pkgdmg',
-    source => 'https://releases.gpgtools.org/GPG%20Suite%20-%202013.10.22.dmg',
-  }
+  #package { 'GPGTools':
+  #  name => 'Install.pkg',
+  #  provider => 'pkgdmg',
+  #  source => 'https://releases.gpgtools.org/GPG%20Suite%20-%202013.10.22.dmg',
+  #}
 
   package { 'leiningen': }
 
@@ -93,6 +93,11 @@ node default {
   package { 'Dash':
     source => 'http://london.kapeli.com/Dash.zip',
     provider => 'compressed_app',
+  }
+
+  package { 'Rust':
+    source => 'http://static.rust-lang.org/dist/rust-0.11.0-x86_64-apple-darwin.pkg',
+    provider => 'pkgdmg',
   }
 
   package { [
