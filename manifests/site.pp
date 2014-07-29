@@ -100,6 +100,7 @@ node default {
     'findutils',
     'gnu-tar',
     'gpg',
+    'wget',
   ]: }
 
   # default ruby versions
