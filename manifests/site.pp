@@ -62,7 +62,6 @@ node default {
   include dnsmasq
   include hub
   include macvim
-  include firefox
   include vagrant
   include java
   include screenhero
@@ -70,6 +69,10 @@ node default {
   class { 'intellij':
     edition => 'ultimate',
     version => '12.1.6'
+  }
+
+  class { 'firefox':
+    version => '31.0',
   }
 
   #package { 'GPGTools':
@@ -96,9 +99,11 @@ node default {
   }
 
   package { 'Rust':
-    source => 'http://static.rust-lang.org/dist/rust-0.11.0-x86_64-apple-darwin.pkg',
+    source => 'http://static.rust-lang.org/dist/rust-nightly-x86_64-apple-darwin.pkg',
     provider => 'pkgdmg',
   }
+
+  package { 'sbt': }
 
   package { [
     'ack',
