@@ -13,6 +13,7 @@ class my_vim {
     'tpope/vim-fugitive',
     'tpope/vim-sensible',
     'jnurmine/Zenburn',
+    'wting/rust.vim',
   ]: }
 
   file { "${vim::vimrc}":
