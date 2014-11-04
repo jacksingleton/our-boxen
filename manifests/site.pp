@@ -105,6 +105,8 @@ node default {
 
   package { 'sbt': }
 
+  package { 'cvs': }
+
   package { [
     'ack',
     'findutils',
