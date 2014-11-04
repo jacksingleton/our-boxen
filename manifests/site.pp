@@ -113,6 +113,7 @@ node default {
     'gnu-tar',
     'gpg',
     'wget',
+    'python3',
   ]: }
 
   # default ruby versions
