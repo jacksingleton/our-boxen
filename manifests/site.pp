@@ -65,6 +65,7 @@ node default {
   include vagrant
   include java
   include screenhero
+  include transmission
 
   class { 'intellij':
     edition => 'ultimate',
