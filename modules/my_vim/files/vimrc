@@ -52,6 +52,7 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 
-let NERDTreeIgnore=['\.pyc$']
+let NERDTreeIgnore=['\.pyc$', '__pycache__']
 
 set wildignore+=*.pyc
+set wildignore+=__pycache__
