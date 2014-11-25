@@ -38,4 +38,7 @@ class my_osx_defaults {
     user => $::boxen_user;
   }
 
+  boxen::env_script { 'history-profile':
+    content => "shopt -s histappend; HISTSIZE=10000; PROMPT_COMMAND='history -a; history -n'"
+  }
 }
