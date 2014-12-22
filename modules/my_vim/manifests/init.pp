@@ -14,11 +14,19 @@ class my_vim {
     'tpope/vim-sensible',
     'jnurmine/Zenburn',
     'wting/rust.vim',
+    'vimoutliner/vimoutliner'
   ]: }
 
   file { "${vim::vimrc}":
-    ensure => present,
+    ensure => "present",
     source => "puppet:///modules/my_vim/vimrc"
+  }
+
+  file { "${vim::vimdir}/ftplugin/": ensure => "directory" }
+
+  file { "${vim::vimdir}/ftplugin/votl.vim":
+    ensure => "present",
+    source => "puppet:///modules/my_vim/ftplugin/votl.vim"
   }
 
 }
