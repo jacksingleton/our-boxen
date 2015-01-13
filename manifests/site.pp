@@ -108,6 +108,13 @@ node default {
 
   package { 'cvs': }
 
+  package { 'youtube-dl': }
+
+  package { 'Adium':
+    source => 'http://downloads.sourceforge.net/project/adium/Adium_1.5.10.dmg?r=&ts=1421171902&use_mirror=softlayer-dal',
+    provider => 'appdmg',
+  }
+
   package { [
     'ack',
     'findutils',
