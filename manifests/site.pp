@@ -115,6 +115,11 @@ node default {
     provider => 'appdmg',
   }
 
+  package { 'BitTorrent Sync':
+    source => 'http://download.getsyncapp.com/endpoint/btsync/os/osx/track/stable',
+    provider => 'appdmg',
+  }
+
   package { [
     'ack',
     'findutils',
