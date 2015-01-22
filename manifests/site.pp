@@ -104,12 +104,6 @@ node default {
     provider => 'pkgdmg',
   }
 
-  package { 'sbt': }
-
-  package { 'cvs': }
-
-  package { 'youtube-dl': }
-
   package { 'Adium':
     source => 'http://downloads.sourceforge.net/project/adium/Adium_1.5.10.dmg?r=&ts=1421171902&use_mirror=softlayer-dal',
     provider => 'appdmg',
@@ -119,6 +113,17 @@ node default {
     source => 'http://download.getsyncapp.com/endpoint/btsync/os/osx/track/stable',
     provider => 'appdmg',
   }
+
+  package { 'Kiwix':
+    source => 'http://download.kiwix.org/bin/0.9/kiwix-0.9.dmg',
+    provider => 'appdmg',
+  }
+
+  package { 'sbt': }
+
+  package { 'cvs': }
+
+  package { 'youtube-dl': }
 
   package { [
     'ack',

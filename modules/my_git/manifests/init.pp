@@ -98,4 +98,8 @@ class my_git {
     value => '"!for k in $(git branch -r --merged master | grep -v \'\\->\' | sed s/^..//);do echo $(git log -1 --pretty=format:\"%ci %cr\" \"$k\")\\\\t\"$k\";done | sort"'
   }
 
+  git::config::global { 'alias.push-all':
+    value => '"!for remote in $(git remote); do echo \"Pushing: $remote\"; git push $remote; echo; done"',
+  }
+
 }

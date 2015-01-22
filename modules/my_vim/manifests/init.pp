@@ -14,7 +14,8 @@ class my_vim {
     'tpope/vim-sensible',
     'jnurmine/Zenburn',
     'wting/rust.vim',
-    'vimoutliner/vimoutliner'
+    'vimoutliner/vimoutliner',
+    'vim-scripts/closetag.vim',
   ]: }
 
   file { "${vim::vimrc}":
