@@ -41,4 +41,13 @@ class my_osx_defaults {
   boxen::env_script { 'history-profile':
     content => "shopt -s histappend; HISTSIZE=10000; PROMPT_COMMAND='history -a; history -n'"
   }
+
+  boxen::env_script { 'colors-for-ls':
+    content => "export CLICOLOR=1"
+  }
+
+  boxen::env_script { 'list-recent-files':
+    content => "alias lsr=\"CLICOLOR_FORCE=1 ls -lt | head\""
+  }
+
 }

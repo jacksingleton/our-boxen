@@ -114,10 +114,10 @@ node default {
     provider => 'appdmg',
   }
 
-  package { 'Kiwix':
-    source => 'http://download.kiwix.org/bin/0.9/kiwix-0.9.dmg',
-    provider => 'appdmg',
-  }
+  #package { 'Kiwix':
+  #  source => 'http://download.kiwix.org/bin/0.9/kiwix-0.9.dmg',
+  #  provider => 'appdmg',
+  #}
 
   package { 'sbt': }
 
@@ -129,7 +129,6 @@ node default {
     'ack',
     'findutils',
     'gnu-tar',
-    'gpg',
     'wget',
     'python3',
   ]: }
