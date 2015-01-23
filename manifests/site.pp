@@ -125,6 +125,8 @@ node default {
 
   package { 'youtube-dl': }
 
+  package { 'ant': }
+
   package { [
     'ack',
     'findutils',
