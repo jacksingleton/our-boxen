@@ -50,4 +50,8 @@ class my_osx_defaults {
     content => "alias lsr=\"CLICOLOR_FORCE=1 ls -lt | head\""
   }
 
+  boxen::env_script { 'httpdump':
+    content => "alias httpdump=\"sudo tcpdump -A 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'\""
+  }
+
 }

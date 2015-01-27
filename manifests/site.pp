@@ -127,6 +127,10 @@ node default {
 
   package { 'ant': }
 
+  package { 'maven': }
+
+  package { 'maven2': }
+
   package { [
     'ack',
     'findutils',
