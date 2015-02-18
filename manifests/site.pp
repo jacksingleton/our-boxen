@@ -58,6 +58,7 @@ node default {
   include my_osx_defaults
   include my_git
   include my_jrnl
+  include octodown
 
   include dnsmasq
   include hub
