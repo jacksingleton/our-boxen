@@ -132,6 +132,12 @@ node default {
 
   package { 'maven2': }
 
+  package { 'sysdig': }
+
+  package { 'ipython':
+    provider => pip
+  }
+
   package { [
     'ack',
     'findutils',

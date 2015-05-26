@@ -16,6 +16,7 @@ class my_vim {
     'wting/rust.vim',
     'vimoutliner/vimoutliner',
     'vim-scripts/closetag.vim',
+    'hallison/vim-markdown',
   ]: }
 
   file { "${vim::vimrc}":
