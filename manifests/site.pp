@@ -138,12 +138,25 @@ node default {
     provider => pip
   }
 
+  package { 'bpython':
+    provider => pip
+  }
+
+  package { 'awscli':
+    provider => pip
+  }
+
+  package { 'percol':
+    provider => pip
+  }
+
   package { [
     'ack',
     'findutils',
     'gnu-tar',
     'wget',
     'python3',
+    'pstree',
   ]: }
 
   # default ruby versions
