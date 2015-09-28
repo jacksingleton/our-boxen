@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: boxen/puppet-bash
+  specs:
+    bash (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.6.1)
@@ -134,6 +139,7 @@ GITHUBTARBALL
     module-data (0.0.3)
 
 DEPENDENCIES
+  bash (= 1.1.0)
   boxen (= 3.6.1)
   dnsmasq (= 1.0.1)
   firefox (= 1.2.1)

@@ -54,6 +54,10 @@ class my_osx_defaults {
     content => "alias httpdump=\"sudo tcpdump -A 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'\""
   }
 
+  boxen::env_script { 'gw':
+    content => "alias gw=./gradlew"
+  }
+
   boxen::env_script { 'java-home':
     content => "export JAVA_HOME=$(/usr/libexec/java_home)"
   }

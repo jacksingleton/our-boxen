@@ -12,11 +12,15 @@ class my_vim {
     'guns/vim-clojure-static',
     'tpope/vim-fugitive',
     'tpope/vim-sensible',
+    'tpope/vim-surround',
+    'tpope/vim-repeat',
+    'tpope/vim-ragtag',
     'jnurmine/Zenburn',
     'wting/rust.vim',
     'vimoutliner/vimoutliner',
     'vim-scripts/closetag.vim',
     'hallison/vim-markdown',
+    'edsono/vim-matchit',
   ]: }
 
   file { "${vim::vimrc}":

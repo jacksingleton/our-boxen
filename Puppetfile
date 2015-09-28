@@ -63,6 +63,7 @@ github "intellij",    "1.5.1"
 github "java",        "1.5.0"
 github "screenhero",  "1.0.1"
 github "transmission", "1.1.0"
+github "bash", "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

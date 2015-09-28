@@ -16,7 +16,8 @@ Exec {
     '/usr/bin',
     '/bin',
     '/usr/sbin',
-    '/sbin'
+    '/sbin',
+    "/Users/${::boxen_user}/bin",
   ],
 
   environment => [
@@ -67,6 +68,12 @@ node default {
   include java
   include screenhero
   include transmission
+
+  include bash
+  include bash::completion
+  boxen::env_script { 'bash_completion':
+    content => 'if [ -f /opt/boxen/homebrew/etc/bash_completion ]; then source /opt/boxen/homebrew/etc/bash_completion; fi'
+  }
 
   class { 'intellij':
     edition => 'ultimate',
@@ -150,6 +157,10 @@ node default {
     provider => pip
   }
 
+  package { 'diceware':
+    provider => pip
+  }
+
   package { [
     'ack',
     'findutils',
@@ -171,4 +182,5 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
 }
